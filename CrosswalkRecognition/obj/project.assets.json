@@ -209,6 +209,30 @@
           }
         }
       },
+      "SciSharp.TensorFlow.Redist/2.10.0": {
+        "type": "package",
+        "build": {
+          "build/netstandard2.0/SciSharp.TensorFlow.Redist.props": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/_._": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-x64/native/libtensorflow.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/osx-x64/native/libtensorflow_framework.2.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-x64/native/tensorflow.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
       "SkiaSharp/2.88.3": {
         "type": "package",
         "dependencies": {
@@ -637,6 +661,24 @@
         "newtonsoft.json.13.0.1.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
+      ]
+    },
+    "SciSharp.TensorFlow.Redist/2.10.0": {
+      "sha512": "3mczWI5vX7SuCFAt1F5O+7ZCo2i6UHgWGatoXsIotlZieMvWoRBRUWnChZbPiud3aUtUqI2J9tYfxhHtV1TdKg==",
+      "type": "package",
+      "path": "scisharp.tensorflow.redist/2.10.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD_PARTY_NOTICES.txt",
+        "build/netstandard2.0/SciSharp.TensorFlow.Redist.props",
+        "runtimes/linux-x64/native/_._",
+        "runtimes/osx-x64/native/libtensorflow.dylib",
+        "runtimes/osx-x64/native/libtensorflow_framework.2.dylib",
+        "runtimes/win-x64/native/tensorflow.dll",
+        "scisharp.tensorflow.redist.2.10.0.nupkg.sha512",
+        "scisharp.tensorflow.redist.nuspec"
       ]
     },
     "SkiaSharp/2.88.3": {
@@ -1473,7 +1515,8 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.ML >= 2.0.0",
-      "Microsoft.ML.ImageAnalytics >= 2.0.0"
+      "Microsoft.ML.ImageAnalytics >= 2.0.0",
+      "SciSharp.TensorFlow.Redist >= 2.10.0"
     ]
   },
   "packageFolders": {
@@ -1528,6 +1571,10 @@
           "Microsoft.ML.ImageAnalytics": {
             "target": "Package",
             "version": "[2.0.0, )"
+          },
+          "SciSharp.TensorFlow.Redist": {
+            "target": "Package",
+            "version": "[2.10.0, )"
           }
         },
         "imports": [

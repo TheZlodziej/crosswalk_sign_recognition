@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SAbgcG6qQpyblnNDjlFoAdnsVIJKFkAwFtcPrw2bN6DWmzxkTg97PT1KqGYf3PSFl+WtJKmfBxudUIV62tE92A==",
+  "dgSpecHash": "OytozqbTLtNpVGG8arjElOVjoz9d0TPTKaYyr9hAF46yG/EdV4hdPpG71cbJvRwvTLG9b4M2+D+dzfPDion+0g==",
   "success": true,
   "projectFilePath": "C:\\Repos\\CrosswalkRecognition\\CrosswalkRecognition\\CrosswalkRecognition.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\minekuba\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\minekuba\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\minekuba\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\minekuba\\.nuget\\packages\\scisharp.tensorflow.redist\\2.10.0\\scisharp.tensorflow.redist.2.10.0.nupkg.sha512",
     "C:\\Users\\minekuba\\.nuget\\packages\\skiasharp\\2.88.3\\skiasharp.2.88.3.nupkg.sha512",
     "C:\\Users\\minekuba\\.nuget\\packages\\skiasharp.nativeassets.linux.nodependencies\\2.88.3\\skiasharp.nativeassets.linux.nodependencies.2.88.3.nupkg.sha512",
     "C:\\Users\\minekuba\\.nuget\\packages\\skiasharp.nativeassets.macos\\2.88.3\\skiasharp.nativeassets.macos.2.88.3.nupkg.sha512",
