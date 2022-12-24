@@ -1,3 +1,0 @@
-﻿using CrosswalkRecognition;
-
-Main.Run();
