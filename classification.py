@@ -8,7 +8,7 @@ model = tf.keras.models.load_model('model.h5')
 predictions = []
 
 # Loop over the input images
-input_imgs = ['predict_images/pred0.jpg', 'predict_images/pred1.jpg', 'predict_images/pred2.jpg']
+input_imgs = ['predict_images/pred0.jpg', 'predict_images/pred1.jpg', 'predict_images/pred2.jpg', 'predict_images/pred3.jpg']
 for image_path in input_imgs:
   # Read the image file and resize it
   img = tf.keras.preprocessing.image.load_img(image_path, target_size=(150, 150))
