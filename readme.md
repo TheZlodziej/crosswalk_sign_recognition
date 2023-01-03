@@ -6,7 +6,7 @@
 #### Input
 - Path(s) to images
 #### AI Field
-- Machine learning, SVM
+- Deep learning neural network (convolutional neural network)
 
 # State of art
 | Different approaches | Pros | Cons |
@@ -15,8 +15,8 @@
 | SVM | Good performance on image classification tasks | Poor performance on non-linear separable datasets |
 | KNN | Easy to implement and understand, Good performance on small datasets | Poor performance on large datasets, high computational cost, poor interpretability (decisions made) |
 
-# Description of chosen concept (SVM)
-#### SVM description
+# Description of chosen concept (CNN)
+#### CNN description
 TODO
 
 #### Data needed
