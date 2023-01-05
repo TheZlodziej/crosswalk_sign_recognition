@@ -17,8 +17,8 @@ images = [tf.keras.preprocessing.image.img_to_array(image) for image in images]
 images = np.array(images)
 
 predictions = model.predict(images)
-predictions = (predictions > 0.5).astype(int)
+predictions = [prediction[0] > prediction[1] for prediction in predictions]
 
 for i in range(len(predictions)):
     print(
-        f'{img_paths[i]} is {"not" if not predictions[i][0] else ""} a crosswalk sign')
+        f'{img_paths[i]} is {"not" if not predictions[i] else ""} a crosswalk sign')
