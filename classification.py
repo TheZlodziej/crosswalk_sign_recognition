@@ -17,7 +17,7 @@ images = [tf.keras.preprocessing.image.img_to_array(image) for image in images]
 images = np.array(images)
 
 predictions = model.predict(images)
-predictions = [prediction[0] > prediction[1] for prediction in predictions]
+predictions = [np.argmax(prediction) == 84 for prediction in predictions]
 
 for i in range(len(predictions)):
     print(
