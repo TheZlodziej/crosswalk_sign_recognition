@@ -20,7 +20,7 @@
 TODO
 
 #### Data needed
-- 2 sets of images - one of crosswalk signs and one of non-crosswalk signs (taken from google images)
+- large set of labeled images that represent different traffic sign (including crosswalk sign)
 
 #### Output
 - As the output, {image path} - {result} will be printed in console for each input image
