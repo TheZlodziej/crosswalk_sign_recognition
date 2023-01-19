@@ -1,7 +1,4 @@
 import tensorflow as tf
-import numpy as np
-import os
-from sklearn.model_selection import train_test_split
 
 # Load the dataset
 img_size = (150, 150)
@@ -10,22 +7,31 @@ batch_size = 32
 train_ds = tf.keras.utils.image_dataset_from_directory(
     './images/train',
     seed=420,
-    validation_split=0.2,
+    labels='inferred',
+    label_mode='categorical',
+    color_mode='rgb',
     subset="training",
+    validation_split=0.2,
     image_size=img_size,
     batch_size=batch_size)
 
 val_ds = tf.keras.utils.image_dataset_from_directory(
     './images/train',
     seed=420,
-    validation_split=0.2,
+    labels='inferred',
+    label_mode='categorical',
+    color_mode='rgb',
     subset="validation",
+    validation_split=0.2,
     image_size=img_size,
     batch_size=batch_size)
 
 test_ds = tf.keras.utils.image_dataset_from_directory(
     './images/test',
     seed=420,
+    labels='inferred',
+    label_mode='categorical',
+    color_mode='rgb',
     image_size=img_size,
     batch_size=batch_size)
 
@@ -45,7 +51,7 @@ model = tf.keras.Sequential([
 
 # Compile the model
 model.compile(optimizer='adam',
-              loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+              loss='categorical_crossentropy', metrics=['accuracy'])
 
 # Train the model
 history = model.fit(train_ds, epochs=10, validation_data=val_ds)
